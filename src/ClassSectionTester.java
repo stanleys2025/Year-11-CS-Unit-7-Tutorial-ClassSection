@@ -1,4 +1,4 @@
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
@@ -12,7 +12,6 @@ public class ClassSectionTester {
 
     private int testsPassed = 0;
 
-
     public void setUp() {
         student1 = new Student("Adrian", "Wong", 17, 12);
         student2 = new Student("Sylvia", "Tseng", 16, 11);
@@ -20,7 +19,6 @@ public class ClassSectionTester {
         student4 = new Student("Antigone", "Wong", 17, 12);
         cs = new ClassSection("Art", 10, 12);
     }
-
 
     public void tearDown() {
         student1 = null;
